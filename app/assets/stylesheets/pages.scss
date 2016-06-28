@@ -10,9 +10,9 @@ html, body {
 }
 
 body {
-  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/bg-static.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('http://www.millionglitters.com/background/thumb/pattern/background-pattern-006.gif');
+  background-repeat: repeat;
+  
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
 
 /* Main */
 .main {
-  color: #fff;
+  
   position: relative;
   top: 100px;
   text-align: center;
