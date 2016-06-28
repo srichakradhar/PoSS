@@ -14,7 +14,7 @@ class MessagesController < ApplicationController
 		  redirect_to '/messages' 
 		else 
 		  render 'new' 
-		end 
+		end
 	end
   
   private 
