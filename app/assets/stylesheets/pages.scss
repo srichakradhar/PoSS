@@ -38,6 +38,19 @@ body {
   font-size: 30px;
 }
 
+a {
+  background-color: #f2580b;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 12px 24px;
+  transition: background-color 0.5s;
+  text-decoration: none;
+  display: inline-block;
+}
+
 @media screen and (max-width: 800px) {
     body {
         background-size: auto 100%;
