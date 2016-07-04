@@ -1,7 +1,18 @@
 <div class="main">
   <div class="container">
     <%= image_tag("setuserv.png", :alt => "Setu Serv") %></br></br>
-    <p>Message Boards</p></br></br></br>
-    <%= link_to 'Start Posting', "messages" %>
+    <p>Message Boards</p></br>
+    
+    <div class="nav pull-right">
+      <% if current_user %>
+          <%= link_to 'Start Posting', messages_path %>
+          <%= link_to "Log out", logout_path, method: "delete" %><br><br>
+          logged in as <%= current_user.email %>
+      <% else %> 
+        <%= link_to "Login", 'login' %>
+        <%= link_to "Signup", 'signup' %>
+      <% end %>
+      
+    </div>
   </div>
 </div>

@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="container">
+    <%= image_tag("setuserv.png", :alt => "Setu Serv") %>
+    <h1>Messenger</h1>
+  </div>
+</div>
+<br><br>
+<div class="login">
+  <div class="container">
+    <%= form_for :user, url: '/users' do |f| %>
+      <%= f.text_field :first_name, :placeholder => 'First Name' %><br>
+      <%= f.text_field :last_name, :placeholder => 'Last Name' %><br>
+      <%= f.text_field :email, :placeholder => 'Email' %> <br>
+      <%= f.password_field :password, :placeholder => 'Password' %> <br>
+      <%= f.submit "Sign up", :class => "form-btn" %>
+    <% end %>
+  </div>
+</div>

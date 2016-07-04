@@ -9,15 +9,17 @@
   <div class="container">
     
   <%= form_for(@message) do |f| %>  
-		<div class="field"> 
-		  <label>Name</label></br>
-		  <%= f.text_field :name %><br><br>
+		<div class="field">
 		  <%= f.label :message %>
 		  <%= f.text_area :content %> 
-		</div> 
+		</div>
+
 		<div class="actions"> 
 		  <%= f.submit "Create" %> 
+		  <%= link_to "Log out", logout_path, method: "delete" %>
 		</div> 
+		
+    <br><br>logged in as <%= current_user.email %><br>
 	<% end %>
     
   </div>

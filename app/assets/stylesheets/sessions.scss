@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  background-color: #DAD8D2;
+}
+
+.container {
+  // width: 100%;
+}
+
+.cuisine a:hover, .recipes .recipe-link a:hover, .recipes .recipe-edit a:hover, .recipe-show .recipe-edit a:hover, .recipe-show .recipe-delete a:hover, .recipe-edit form input.update-btn:hover, .login form input.form-btn:hover, .signup form input.form-btn:hover {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  transition: background 0.5s, color 0.5s;
+}
+
+.recipe-edit form input, .recipe-edit form textarea, .login form input, .signup form input {
+  background-color: rgba(255,255,255,0.5);
+  border: none;
+  border-bottom: 4px solid #fff;
+  font-size: 16px;
+  margin: 10px 10px 0;
+  padding: 10px;
+  transition: border-bottom 0.5s;
+  width: calc(100% - 120px);
+}
+
+.recipe-edit form input:focus, .recipe-edit form textarea:focus, .login form input:focus, .signup form input:focus {
+  border:none;
+  border-bottom: 4px solid #f2580b;
+  box-shadow: 0 0;
+  transition: border-bottom 0.5s;
+  outline: none;
+}
+
+.recipe-edit form input.form-btn, .login form input.form-btn, .signup form input.form-btn {
+  background-color: #f2580b;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px 0 0;
+  padding: 0;
+  transition: background 0.5s, color 0.5s;
+  width: 100%;
+}
+
+.login, .signup {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.login form input, .signup form input {
+  width: 280px;
+}
+
+.login form input.form-btn, .signup form input.form-btn {
+  margin-left: 30px;
+  width: 340px;
+  transition: background 0.5s, color 0.5s;
+}
+
+input::-webkit-input-placeholder {
+color: black !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: black !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: black !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: black !important;  
+}
